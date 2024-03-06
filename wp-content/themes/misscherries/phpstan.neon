@@ -1,0 +1,12 @@
+parameters:
+  level: 5
+  reportUnmatchedIgnoredErrors: false
+  ignoreErrors:
+    - '#Function .* invoked with .* parameters, 0 required#'
+  paths:
+    - .
+  excludePaths:
+    - vendor
+
+  scanDirectories:
+    - ../../../

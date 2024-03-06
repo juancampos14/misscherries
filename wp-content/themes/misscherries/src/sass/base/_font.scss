@@ -1,0 +1,29 @@
+// sass-lint:disable-all
+$theme-font-path: $fa-font-path;
+
+//sass-lint:disable-all
+$fonts-path: '../fonts';
+
+html {
+  font-size: 10px;
+}
+
+$inter: 'Inter';
+/*$open-sans: 'Open Sans';*/
+
+$primary-font: $inter, Arial;
+/*$secondary-font: $open-sans, Arial;*/
+
+@font-face {
+  font-family: $inter;
+  src: url('#{$fonts-path}/Inter-VariableFont_slnt,wght.eot');
+  src: url('#{$fonts-path}/Inter-VariableFont_slnt,wght.eot?#iefix') format('embedded-opentype'),
+      url('#{$fonts-path}/Inter-VariableFont_slnt,wght.woff2') format('woff2'),
+      url('#{$fonts-path}/Inter-VariableFont_slnt,wght.woff') format('woff'),
+      url('#{$fonts-path}/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+

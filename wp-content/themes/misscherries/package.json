@@ -1,0 +1,40 @@
+{
+  "name": "brooktec",
+  "version": "2.1.0",
+  "description": "Brooktec WP Theme",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brooktec/brooktec-wordpress-seed-theme.git"
+  },
+  "scripts": {
+    "start": "gulp build:watch",
+    "build-dev": "gulp build:dev",
+    "build": "gulp build:pro",
+    "watch": "gulp watch",
+    "clean": "gulp clean",
+    "test": "gulp test"
+  },
+  "author": "Brooktec",
+  "devDependencies": {
+    "browser-sync": "2.27",
+    "dotenv": "^16.3.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.2"
+  }
+}

@@ -1,0 +1,63 @@
+
+@mixin ratio($w: 1, $h: 1) {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: $h / $w * 100%;
+  }
+
+  & > * {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@mixin ratio-bg($w: 1, $h: 1, $size: cover) {
+  @include ratio($w, $h);
+  @include bg-image($size);
+}
+
+@mixin bg-image($size: cover) {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+
+@mixin placeholder($color, $opacity: 1, $text-transform: none, $font-weight: normal, $letter-spacing: normal) {
+  &:-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
+    color: $color;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    opacity: $opacity;
+    text-transform: $text-transform;
+  }
+
+  &::-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
+    color: $color;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    opacity: $opacity;
+    text-transform: $text-transform;
+  }
+
+  &:-ms-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
+    color: $color;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    opacity: $opacity;
+    text-transform: $text-transform;
+  }
+
+  &::-webkit-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
+    color: $color;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    opacity: $opacity;
+    text-transform: $text-transform;
+  }
+}

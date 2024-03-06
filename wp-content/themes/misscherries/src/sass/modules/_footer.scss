@@ -1,0 +1,158 @@
+footer {
+  font-family: $inter;
+
+  div {
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    input {
+      display: block;
+    }
+  }
+
+  ul {
+    display: inline-block;
+    width: 100%;
+
+    li {
+      align-items: center;
+      display: flex;
+      float: left;
+      justify-content: center;
+
+      a {
+        padding: 1.6rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.buttom-text-white {
+  background-color: $black;
+  border: 0;
+  border-radius: .5rem;
+  color: $white;
+  padding: 1rem 2rem;
+  text-align: center;
+
+  &:hover {
+    background-color: $crimson;
+  }
+}
+
+.footer-grey {
+  background-color: $whitesmoke;
+  height: 7rem;
+  text-align: center;
+}
+
+.footer-grey-info {
+  background-color: $whitesmoke;
+  height: 33rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.img-layer {
+  width: 75%;
+}
+
+.div-img {
+  padding: 3rem;
+  text-align: center;
+}
+
+.img-red-icons {
+  margin-top: -1rem;
+  width: 15%;
+
+  &:hover {
+    background-color: $crimson;
+  }
+}
+
+.div-ig-icon {
+  text-align: right;
+}
+
+.div-text-ig {
+  text-align: left;
+}
+
+.menu-footer {
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 14rem;
+  justify-content: center;
+  list-style: none;
+  margin-top: 2.2rem;
+  overflow: hidden;
+  text-align: center;
+
+  li {
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: $crimson;
+      }
+    }
+  }
+}
+
+.first-div-footer {
+  height: 25rem;
+  padding: 3rem;
+}
+
+.div-menu-footer {
+  height: 14rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ig-rrss {
+  color: $black;
+  font-size: 307%;
+
+  &:hover {
+    color: $crimson;
+  }
+}
+
+.div-border-footer {
+  align-items: center;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.input-email {
+  border: 0;
+  border-bottom: .4rem solid $whitesmoke;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: .5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.error-message {
+  color: $crimson;
+  display: none;
+  font-size: 1.2rem;
+  margin-top: .5rem;
+}
+  
