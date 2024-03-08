@@ -71,7 +71,7 @@
 .div2-card {
   background-color: $black;
   margin: .5rem;
-  width: 48%;
+    width: 48%;
 
   p {
     text-decoration: none;
@@ -80,7 +80,7 @@
 
 .img-card {
   height: auto;
-  width: 100%;
+    width: 100%;
 }
 
 .text-block-card {
@@ -140,6 +140,3 @@
 .item {
   aspect-ratio: 2 / 1; //sass-lint:disable-line no-misspelled-properties
 }
-
-
-

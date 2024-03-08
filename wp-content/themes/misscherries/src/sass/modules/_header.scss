@@ -6,33 +6,6 @@ body {
   }
 }
 
-.menu-open {
-  @media (max-width: 767.98px) {
-    .nav-menu {
-      .menu-header {
-        background-color: $crimson;
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-
-        li {
-          display: block;
-          float: none;
-          margin-bottom: 1rem;
-
-          a {
-            display: block;
-
-            &:hover {
-              color: $whitesmoke;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 header {
   font-family: $inter;
   letter-spacing: 30%;
@@ -55,133 +28,158 @@ header {
       }
     }
   }
-}
 
-.img-logo {
-  left: 157.2rem;
-  max-width: 70%;
-  top: 6.6rem;
-}
-
-.custom-logo-link {
-  img {
-    height: auto;
-    max-width: 100%;
+  .menu-open {
+    @media (max-width: 767.98px) {
+      .nav-menu {
+        .menu-header {
+          background-color: $crimson;
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+  
+          li {
+            display: block;
+            float: none;
+            margin-bottom: 1rem;
+  
+            a {
+              display: block;
+  
+              &:hover {
+                color: $whitesmoke;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
 
-.text-es {
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
-
-.img-arrow {
-  left: 296.5rem;
-  margin-top: -1rem;
-  max-width: 10px;
-  top: 10.3rem;
-}
-
-.img-heart {
-  max-width: 20px;
-  text-align: center;
-}
-
-.text-account {
-  letter-spacing: 30%;
-  size: 3.9rem;
-}
-
-.row-header {
-  align-items: center;
-  text-align: center;
-}
-
-.menu-header {
-  align-items: center;
-  display: flex;
-  float: left;
-  justify-content: center;
-  list-style: none;
-  margin-top: 2.2rem;
-  overflow: hidden;
-  text-align: center;
-
-  li {
-
+  .img-logo {
+    left: 157.2rem;
+    max-width: 70%;
+    top: 6.6rem;
+  }
+  
+  .custom-logo-link {
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  
+  .text-es {
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  .img-arrow {
+    left: 296.5rem;
+    margin-top: -1rem;
+    max-width: 10px;
+    top: 10.3rem;
+  }
+  
+  .img-heart {
+    max-width: 20px;
+    text-align: center;
+  }
+  
+  .text-account {
+    letter-spacing: 30%;
+    size: 3.9rem;
+  }
+  
+  .row-header {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .menu-header {
+    align-items: center;
+    display: flex;
+    float: left;
+    justify-content: center;
+    list-style: none;
+    margin-top: 2.2rem;
+    overflow: hidden;
+    text-align: center;
+  
+    li {
+  
+      a {
+        &:hover {
+          color: $crimson;
+        }
+      }
+    }
+  }
+  
+  .div-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .div-border {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: .3rem solid $whitesmoke;
+    text-align: center;
+  }
+  
+  .menu-button {
+    background-color: $crimson;
+    border-color: none;
+  
+    &:hover {
+      background-color: $crimson;
+    }
+  
+    i {
+      &:hover {
+        background-color: $crimson;
+      }
+    }
+  
     a {
       &:hover {
-        color: $crimson;
+        background-color: $crimson;
       }
     }
   }
-}
-
-.div-header {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.div-border {
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-top: .3rem solid $whitesmoke;
-  text-align: center;
-}
-
-.menu-button {
-  background-color: $crimson;
-  border-color: none;
-
-  &:hover {
-    background-color: $crimson;
-  }
-
-  i {
-    &:hover {
-      background-color: $crimson;
-    }
-  }
-
-  a {
-    &:hover {
-      background-color: $crimson;
-    }
-  }
-}
-
-.menu-header-2 {
-  .menu-toggler {
-    display: none;
-  }
-
-  @media (max-width: 767.98px) {
-    .menu-header {
+  
+  .menu-header-2 {
+    .menu-toggler {
       display: none;
     }
-
-    .menu-toggler {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    &.active {
+  
+    @media (max-width: 767.98px) {
       .menu-header {
-        display: block;
+        display: none;
+      }
+  
+      .menu-toggler {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+      &.active {
+        .menu-header {
+          display: block;
+        }
       }
     }
   }
+  
+  .menu-toggler {
+    background-color: transparent;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+  }  
 }
-
-.menu-toggler {
-  background-color: transparent;
-  border-radius: .25rem;
-  font-size: 1.25rem;
-}
-
-
   
