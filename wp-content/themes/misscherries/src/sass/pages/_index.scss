@@ -71,6 +71,7 @@
 .div2-card {
   background-color: $black;
   margin: .5rem;
+  text-align: center;
   width: 48%;
 
   p {
@@ -80,6 +81,7 @@
 
 .img-card {
   height: auto;
+  text-align: center;
   width: 100%;
 }
 
@@ -111,7 +113,7 @@
 .display-card {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .owl-carousel {
@@ -139,6 +141,11 @@
 
 .item {
   aspect-ratio: 2 / 1; //sass-lint:disable-line no-misspelled-properties
+}
+
+.title-product {
+  color: $crimson;
+  text-align: center;
 }
 
 
