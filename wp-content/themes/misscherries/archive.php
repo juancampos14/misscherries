@@ -135,8 +135,13 @@ get_header();
                                         <?php
                                         if (has_post_thumbnail()) {
                                             the_post_thumbnail('full', array('class' => 'img-item', 'alt' => get_the_title()));
-                                        }
+                                        }else {
+                                            echo "buenas";
                                         ?>
+                                            <div class="default-image">
+                                                <img src="http://misscherries.loc/wp-content/uploads/2024/02/FOTO_1-e1710158811356.jpg" class="img-layer" alt="default-image" >
+                                            </div>
+                                        <?php } ?>
                                     </a>
                                 </div>
                                 <div class="card-footer">
