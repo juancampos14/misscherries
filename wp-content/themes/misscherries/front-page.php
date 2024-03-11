@@ -44,10 +44,10 @@ get_header();
                                                 echo wp_get_attachment_image($id_image,'full',false,[ 'class' => 'img-item imagen-taxonomy' ] );//muestra la imagen asociada al termino actual, la funcion es similar a la etiqueta <img> y usamos la id, ya que en wp esta configurado asi
                                             ?>
                                         </div>
-                                        <div class="text-block-card">
-                                            <div class="div1-card">
-                                                <div class="div2-card">
-                                                    <p class="card-text"><?php echo $tax_term->name; ?></p>
+                                        <div class="card-footer">
+                                            <div class="background-footer-block1-card">
+                                                <div class="background-footer-block2-card">
+                                                    <p class="text-footer-card"><?php echo $tax_term->name; ?></p>
                                                 </div>
                                             </div>
                                         </div>
