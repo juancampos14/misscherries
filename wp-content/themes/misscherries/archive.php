@@ -58,8 +58,12 @@ get_header();
                                                 <?php
                                                 if (has_post_thumbnail()) {
                                                     the_post_thumbnail('full', array('class' => 'img-item', 'alt' => get_the_title()));
-                                                }
+                                                }else {
                                                 ?>
+                                                    <div>
+                                                        <img src="http://misscherries.loc/wp-content/uploads/2024/02/FOTO_1-e1710158811356.jpg" class="img-item" alt="default-image" >
+                                                    </div>
+                                                <?php } ?>
                                             </a>
                                         </div>
                                         <div class="card-footer">
@@ -89,8 +93,14 @@ get_header();
                                 <div class="img-card">
                                     <?php
                                     $id_image = get_field('imagen-taxonomy', $subcategory);
-                                    echo wp_get_attachment_image($id_image, 'full', false, ['class' => 'img-item imagen-taxonomy']);
+                                    if (!empty($id_image)) {
+                                        echo wp_get_attachment_image($id_image, 'full', false, ['class' => 'img-item imagen-taxonomy']);
+                                    } else {
                                     ?>
+                                        <div>
+                                            <img src="http://misscherries.loc/wp-content/uploads/2024/02/FOTO_1-e1710158811356.jpg" class="img-item" alt="default-image" >
+                                        </div>
+                                    <?php } ?>
                                 </div>
                                 <div class="card-footer">
                                     <div class="background-footer-block1-card">
@@ -133,13 +143,12 @@ get_header();
                                 <div class="img-card">
                                     <a href="<?php the_permalink(); ?>">
                                         <?php
-                                        if (has_post_thumbnail()) {
+                                        if (has_post_thumbnail(get_the_ID())) {
                                             the_post_thumbnail('full', array('class' => 'img-item', 'alt' => get_the_title()));
                                         }else {
-                                            echo "buenas";
                                         ?>
-                                            <div class="default-image">
-                                                <img src="http://misscherries.loc/wp-content/uploads/2024/02/FOTO_1-e1710158811356.jpg" class="img-layer" alt="default-image" >
+                                            <div>
+                                                <img src="http://misscherries.loc/wp-content/uploads/2024/02/FOTO_1-e1710158811356.jpg" class="img-item" alt="default-image" >
                                             </div>
                                         <?php } ?>
                                     </a>
