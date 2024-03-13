@@ -1,0 +1,24 @@
+.img-single-product {
+    height: 90%;
+    width: 90%;
+}
+
+.single-title-product {
+    color: $crimson;
+}
+
+.add-single-product {
+    background-color: $black;
+    width: 50%;
+    color: $whitesmoke;
+    font-size: 2rem;
+
+    &:hover {
+        color: $crimson;
+    }
+}
+
+.div-single-product {
+    text-align: center;
+    padding: 1rem;
+}

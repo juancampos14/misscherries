@@ -1,7 +1,5 @@
 jQuery(function($){
 
-    console.log("holaa");
-
     //aqui añado la clase que hace que se active o desactive el menu-open
     $(".menu-toggler").on('click',function(){
         $("body").toggleClass("menu-open")
