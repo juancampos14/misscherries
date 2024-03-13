@@ -1,24 +1,43 @@
 .img-single-product {
-    height: 90%;
-    width: 90%;
+  height: 90%;
+  width: 90%;
 }
 
 .single-title-product {
-    color: $crimson;
+  color: $crimson;
 }
 
 .add-single-product {
-    background-color: $black;
-    width: 50%;
-    color: $whitesmoke;
-    font-size: 2rem;
+  background-color: $black;
+  color: $whitesmoke;
+  font-size: 2rem;
+  width: 50%;
 
-    &:hover {
-        color: $crimson;
-    }
+  &:hover {
+    color: $crimson;
+  }
 }
 
 .div-single-product {
-    text-align: center;
-    padding: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.attributes-single-product {
+  color: $crimson;
+}
+
+.form-sizes {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3rem;
+}
+
+.label-sizes {
+  align-items: center;
+  display: flex;
+}
+
+.input-sizes {
+  margin-right: .2rem;
 }

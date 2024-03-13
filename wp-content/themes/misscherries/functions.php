@@ -112,6 +112,30 @@ function custom_product_taxonomies() {
         )
     );
 
+    register_taxonomy (
+        'Sizes',
+        'product',
+        array(
+            'labels' => array(
+                'name'              => __( 'Sizes of products' ),
+                'singular_name'     => __( 'Sizes' ),
+                'search_items'      => __( 'Buscar Talla' ),
+                'all_items'         => __( 'Todas las tallas' ),
+                'edit_item'         => __( 'Editar talla' ),
+                'update_item'       => __( 'Actualizar talla' ),
+                'add_new_item'      => __( 'Añadir nueva talla' ),
+                'new_item_name'     => __( 'Nuevo nombre de la talla' ),
+                'menu_name'         => __( 'Sizes' ),
+            ),
+            'public'            => true,
+            'hierarchical'      => true,
+            'show_ui'           => true,
+            'show_admin_column' => true,
+            'query_var'         => true,
+            'rewrite'           => array( 'slug' => 'Sizes' ),
+        )
+    );
+
 }
 
 function make_title()
