@@ -49,8 +49,8 @@ get_header();
                                 echo '<form class="form-sizes">';
                                 foreach ($sizes as $size) {
                                     echo '<label class="label-sizes">';
-                                    echo '<input class="input-sizes" type="radio" name="size" value="' . $size->slug . '">';
-                                    echo $size->name;
+                                        echo '<input class="input-sizes" type="radio" name="size" value="' . $size->slug . '">';
+                                        echo '<span class="size-name">' . $size->name . '</span>';
                                     echo '</label><br>';
                                 }
                                 echo '</form>';

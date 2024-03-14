@@ -36,8 +36,27 @@
 .label-sizes {
   align-items: center;
   display: flex;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+  }
 }
 
 .input-sizes {
+  appearance: none;
+  border: .2rem solid $black;
+  border-radius: 2%;
+  display: inline-block;
+  height: 4rem;
   margin-right: .2rem;
+  outline: none;
+  width: 4rem;
+
+  &:checked {
+    background-color: $grey-clear;
+  }
 }
